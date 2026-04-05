@@ -20,46 +20,52 @@
       font-family: Georgia, "Times New Roman", serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.7;
+      line-height: 1.75;
     }
 
     a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a:hover { opacity: 0.7; }
 
     .wrap {
       max-width: var(--max);
       margin: auto;
-      padding: 32px 20px 80px;
+      padding: 36px 20px 80px;
     }
 
     .nav {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
       font-size: 15px;
     }
 
-    h1 { font-size: 44px; margin-bottom: 10px; }
-    h2 { font-size: 30px; margin-top: 50px; }
+    h1 { font-size: 42px; margin-bottom: 6px; }
+    h2 { font-size: 30px; margin-top: 56px; }
     h3 { font-size: 22px; }
 
-    .role { font-size: 22px; margin-bottom: 12px; }
+    .role { font-size: 18px; color: var(--muted); }
+
+    .contact {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
 
     .lead {
       font-size: 18px;
       color: var(--muted);
-      margin-bottom: 20px;
+      margin-top: 18px;
     }
 
     .highlight { font-weight: 700; }
 
     .divider {
       border-top: 1px solid var(--line);
-      margin: 28px 0;
+      margin: 32px 0;
     }
 
     .project {
-      padding: 20px 0;
+      padding: 22px 0;
       border-bottom: 1px solid var(--line);
     }
 
@@ -90,18 +96,25 @@
     </div>
 
     <!-- HERO -->
-    <h1>Senior Backend Engineer</h1>
-    <div class="role">Adobe Commerce · High-Scale Systems · Performance Engineering</div>
+    <h1>Balkrishan Verma</h1>
+    <div class="role">Senior Backend Engineer · Adobe Commerce · High-Scale Systems</div>
+
+    <p class="contact">
+      Bangkok, Thailand · 
+      <a href="mailto:balkrishanverma6196@gmail.com">Email</a> · 
+      <a href="https://www.linkedin.com/in/balkrishan-verma-ba0261136" target="_blank">LinkedIn</a>
+    </p>
 
     <p class="lead">
-      I design and scale backend systems for high-traffic e-commerce platforms.
-      My work focuses on performance optimization, production reliability, and solving critical system issues at scale.
+      I design and scale backend systems for high-traffic Adobe Commerce platforms,
+      focusing on performance optimization, production reliability, and solving critical system issues at scale.
     </p>
 
     <p>
       <span class="highlight">→ Improved performance by 40%</span><br>
-      <span class="highlight">→ Resolved critical MySQL memory escalation (21% → 86%)</span><br>
-      <span class="highlight">→ Built traffic control system for Black Friday scale</span>
+      <span class="highlight">→ Resolved MySQL memory escalation (21% → 86%)</span><br>
+      <span class="highlight">→ Built traffic control system for Black Friday scale</span><br>
+      <span class="highlight">→ Worked on high-traffic production systems</span>
     </p>
 
     <div class="divider"></div>
@@ -112,21 +125,26 @@
 
       <div class="project">
         <h3>H&M — Scaling Adobe Commerce Platform</h3>
-        <p><strong>Problem:</strong> MySQL memory usage increased from 21% to 86%, risking downtime.</p>
-        <p><strong>Approach:</strong> Query optimization, indexing improvements, Redis and Varnish tuning.</p>
+        <p><strong>Problem:</strong> MySQL memory increased from 21% to 86%, risking downtime.</p>
+        <p><strong>Approach:</strong></p>
+        <ul>
+          <li>Query optimization and indexing</li>
+          <li>Redis and Varnish tuning</li>
+          <li>Cache validation and monitoring</li>
+        </ul>
         <p class="impact"><strong>Impact:</strong> Prevented downtime and improved response time by 40%.</p>
       </div>
 
       <div class="project">
         <h3>Black Friday — Traffic Control System</h3>
-        <p><strong>Problem:</strong> Platform instability under peak traffic load.</p>
-        <p><strong>Solution:</strong> AWS Lambda-based waiting room system.</p>
+        <p><strong>Problem:</strong> Platform instability under peak traffic.</p>
+        <p><strong>Solution:</strong> AWS Lambda-based waiting room.</p>
         <p class="impact"><strong>Impact:</strong> Maintained stability during high-traffic events.</p>
       </div>
 
       <div class="project">
         <h3>Segway — Full Adobe Commerce Platform Build</h3>
-        <p>Delivered complete e-commerce solution including custom theme, backend architecture, and performance optimization.</p>
+        <p>Designed and implemented complete Adobe Commerce platform including custom theme, backend architecture, and performance optimization.</p>
       </div>
 
       <div class="project">
@@ -136,7 +154,7 @@
 
       <div class="project">
         <h3>SMY Performance — Custom Checkout & B2B Logic</h3>
-        <p>Built advanced checkout flows, custom shipping logic, and wholesale functionality.</p>
+        <p>Built advanced checkout flows, shipping logic, and wholesale functionality.</p>
       </div>
 
       <div class="project">
@@ -167,17 +185,17 @@
 
       <div class="project">
         <h3>Senior Backend Engineer — H&M</h3>
-        <p>Working on Adobe Commerce Cloud for high-scale regional platforms.</p>
+        <p>Working on Adobe Commerce Cloud handling high-traffic production environments, focusing on performance, caching, and production issue resolution.</p>
       </div>
 
       <div class="project">
         <h3>Lead Software Developer — Sigma Solve</h3>
-        <p>Led backend development, integrations, and system architecture.</p>
+        <p>Led backend development and architecture across multiple e-commerce platforms including API integrations and system optimization.</p>
       </div>
 
       <div class="project">
         <h3>Magento Developer → Backend Engineer</h3>
-        <p>Built and scaled multiple e-commerce systems.</p>
+        <p>Built and scaled multiple e-commerce systems with focus on performance and customization.</p>
       </div>
     </section>
 
