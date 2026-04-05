@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Balkrishan Verma | Portfolio</title>
+  <title>Balkrishan Verma | Senior Backend Engineer</title>
+
   <style>
     :root {
       --bg: #ffffff;
@@ -11,353 +12,190 @@
       --muted: #555555;
       --line: #e8e8e8;
       --link: #0a66c2;
-      --card-bg: #fafafa;
       --max: 820px;
     }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
-    a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     .wrap {
       max-width: var(--max);
-      margin: 0 auto;
-      padding: 28px 20px 72px;
+      margin: auto;
+      padding: 32px 20px 80px;
     }
 
-    .topnav {
+    .nav {
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
-      gap: 12px;
+      margin-bottom: 32px;
       font-size: 15px;
-      margin-bottom: 28px;
     }
 
-    .topnav .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
+    h1 { font-size: 44px; margin-bottom: 10px; }
+    h2 { font-size: 30px; margin-top: 50px; }
+    h3 { font-size: 22px; }
 
-    h1, h2, h3, h4, h5 {
-      margin: 0 0 12px;
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    h1 {
-      font-size: 44px;
-      margin-top: 8px;
-    }
-
-    h2 {
-      font-size: 34px;
-      margin-top: 40px;
-    }
-
-    h3 {
-      font-size: 24px;
-    }
-
-    h5 {
-      font-size: 16px;
-      margin-bottom: 6px;
-      text-transform: none;
-    }
-
-    .role {
-      font-size: 24px;
-      margin-bottom: 12px;
-    }
+    .role { font-size: 22px; margin-bottom: 12px; }
 
     .lead {
       font-size: 18px;
       color: var(--muted);
-      max-width: 720px;
+      margin-bottom: 20px;
     }
+
+    .highlight { font-weight: 700; }
 
     .divider {
-      border: 0;
       border-top: 1px solid var(--line);
-      margin: 26px 0;
-    }
-
-    .section-intro {
-      color: var(--muted);
-      margin-bottom: 16px;
-    }
-
-    .tags {
-      color: var(--muted);
-      margin-top: 10px;
+      margin: 28px 0;
     }
 
     .project {
-      padding: 18px 0;
+      padding: 20px 0;
       border-bottom: 1px solid var(--line);
     }
 
-    .project:last-child {
-      border-bottom: 0;
-    }
+    .project:last-child { border-bottom: none; }
 
-    .project p {
-      margin: 8px 0;
-    }
+    .impact { font-weight: 600; }
 
-    .meta {
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    .mini-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 12px;
-    }
-
-    .problem-list,
-    .stack-list,
-    .impact-list {
-      margin: 10px 0 0 18px;
-      padding: 0;
-    }
-
-    .changelog {
-      background: var(--card-bg);
-      border: 1px solid var(--line);
-      padding: 18px;
-      border-radius: 10px;
-      margin-top: 14px;
-    }
-
-    .version {
-      margin-top: 18px;
-    }
+    ul { margin-top: 10px; }
 
     .footer {
-      margin-top: 40px;
+      margin-top: 60px;
       color: var(--muted);
       font-size: 14px;
     }
-
-    @media (max-width: 640px) {
-      h1 { font-size: 36px; }
-      h2 { font-size: 28px; }
-      .role { font-size: 20px; }
-      .lead { font-size: 17px; }
-    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
-    <nav class="topnav">
-      <a href="#top"><strong>Balkrishan Verma</strong></a>
-      <div class="links">
-        <a href="#projects">Projects</a>
-        <a href="#showcase">Website Showcase</a>
-        <a href="#career">Career Changelog</a>
+
+    <div class="nav">
+      <strong>Balkrishan Verma</strong>
+      <div>
+        <a href="#projects">Projects</a> ·
+        <a href="#career">Career</a> ·
         <a href="#resume">Resume</a>
-        <a href="https://www.linkedin.com/in/balkrishan-verma-ba0261136" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
-    </nav>
+    </div>
 
-    <main id="top">
-      <h1>Balkrishan Verma</h1>
-      <div class="role">Senior Backend Engineer</div>
-      <p class="lead">
-        I specialize in Adobe Commerce and backend development for high-traffic e-commerce systems.
-        My work focuses on performance optimization, production reliability, integrations, and scalable architecture.
-      </p>
+    <!-- HERO -->
+    <h1>Senior Backend Engineer</h1>
+    <div class="role">Adobe Commerce · High-Scale Systems · Performance Engineering</div>
 
-      <hr class="divider" />
+    <p class="lead">
+      I design and scale backend systems for high-traffic e-commerce platforms.
+      My work focuses on performance optimization, production reliability, and solving critical system issues at scale.
+    </p>
 
+    <p>
+      <span class="highlight">→ Improved performance by 40%</span><br>
+      <span class="highlight">→ Resolved critical MySQL memory escalation (21% → 86%)</span><br>
+      <span class="highlight">→ Built traffic control system for Black Friday scale</span>
+    </p>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Selected Work</h2>
+
+      <div class="project">
+        <h3>H&M — Scaling Adobe Commerce Platform</h3>
+        <p><strong>Problem:</strong> MySQL memory usage increased from 21% to 86%, risking downtime.</p>
+        <p><strong>Approach:</strong> Query optimization, indexing improvements, Redis and Varnish tuning.</p>
+        <p class="impact"><strong>Impact:</strong> Prevented downtime and improved response time by 40%.</p>
+      </div>
+
+      <div class="project">
+        <h3>Black Friday — Traffic Control System</h3>
+        <p><strong>Problem:</strong> Platform instability under peak traffic load.</p>
+        <p><strong>Solution:</strong> AWS Lambda-based waiting room system.</p>
+        <p class="impact"><strong>Impact:</strong> Maintained stability during high-traffic events.</p>
+      </div>
+
+      <div class="project">
+        <h3>Segway — Full Adobe Commerce Platform Build</h3>
+        <p>Delivered complete e-commerce solution including custom theme, backend architecture, and performance optimization.</p>
+      </div>
+
+      <div class="project">
+        <h3>Sony UAE — End-to-End System Design & Delivery</h3>
+        <p>Led architecture and development from system design through full implementation.</p>
+      </div>
+
+      <div class="project">
+        <h3>SMY Performance — Custom Checkout & B2B Logic</h3>
+        <p>Built advanced checkout flows, custom shipping logic, and wholesale functionality.</p>
+      </div>
+
+      <div class="project">
+        <h3>40+ E-commerce Platforms</h3>
+        <p>Delivered and maintained multiple high-performance e-commerce systems across industries.</p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROBLEMS -->
+    <section>
+      <h2>Production Problems I Solve</h2>
+      <ul>
+        <li>Database bottlenecks and memory issues under load</li>
+        <li>Cache inconsistencies across CDN, Varnish, and Magento</li>
+        <li>Performance degradation during checkout</li>
+        <li>System instability during peak traffic events</li>
+        <li>Complex API integrations across enterprise systems</li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CAREER -->
+    <section id="career">
+      <h2>Career</h2>
+
+      <div class="project">
+        <h3>Senior Backend Engineer — H&M</h3>
+        <p>Working on Adobe Commerce Cloud for high-scale regional platforms.</p>
+      </div>
+
+      <div class="project">
+        <h3>Lead Software Developer — Sigma Solve</h3>
+        <p>Led backend development, integrations, and system architecture.</p>
+      </div>
+
+      <div class="project">
+        <h3>Magento Developer → Backend Engineer</h3>
+        <p>Built and scaled multiple e-commerce systems.</p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <h2>Resume</h2>
       <p>
-        Interests: Adobe Commerce, backend engineering, performance optimization, AWS, Redis, Varnish,
-        MySQL tuning, REST/GraphQL integrations, high-traffic e-commerce, checkout systems, and production debugging.
+        <a href="/Balkrishan_Verma_Senior_Backend_Engineer.pdf" target="_blank">View Resume</a> ·
+        <a href="/Balkrishan_Verma_Senior_Backend_Engineer.pdf" download>Download Resume</a>
       </p>
+    </section>
 
-      <hr class="divider" />
+    <div class="footer">
+      Focused on backend engineering roles involving scalable systems, performance optimization, and high-traffic platforms.
+    </div>
 
-      <div class="mini-links">
-        <a href="mailto:balkrishanverma6196@gmail.com">Email</a>
-        <a href="https://github.com/balkrishanverma6196" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/balkrishan-verma-ba0261136" target="_blank" rel="noreferrer">LinkedIn</a>
-      </div>
-
-      <section id="projects">
-        <h2>Projects</h2>
-
-        <article class="project">
-          <h5>Adobe Commerce · High Traffic · Performance</h5>
-          <h3>Scaling H&amp;M Thailand &amp; Indonesia</h3>
-          <p>
-            Worked on Adobe Commerce Cloud for H&amp;M Thailand and Indonesia, focusing on backend reliability,
-            production issue resolution, cache behavior, and peak-traffic stability.
-          </p>
-          <ul class="impact-list">
-            <li>Resolved a critical MySQL memory escalation from 21% to 86%, preventing production downtime.</li>
-            <li>Improved platform response time by 40% through Redis, Varnish, and query optimization.</li>
-            <li>Implemented a custom AWS Lambda-based waiting room strategy for Black Friday traffic spikes.</li>
-            <li>Investigated and fixed Cloudflare stale asset delivery issues with cache-busting and versioning.</li>
-          </ul>
-          <div class="mini-links">
-            <a href="https://th.hm.com" target="_blank" rel="noreferrer">Thailand site</a>
-            <a href="https://id.hm.com" target="_blank" rel="noreferrer">Indonesia site</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <h5>Adobe Commerce · Full Build</h5>
-          <h3>Segway Store</h3>
-          <p>
-            Delivered a complete Adobe Commerce website including custom theme implementation,
-            storefront behavior, and end-to-end backend work.
-          </p>
-          <div class="mini-links">
-            <a href="http://store.segway.com/" target="_blank" rel="noreferrer">Visit project</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <h5>Custom Checkout · B2B Logic</h5>
-          <h3>SMY Performance</h3>
-          <p>
-            Built custom checkout, shipping logic, and wholesale-oriented functionality to support
-            more complex business flows than standard storefront behavior.
-          </p>
-          <div class="mini-links">
-            <a href="https://smyperformance.com/" target="_blank" rel="noreferrer">Visit project</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <h5>System Design · End-to-End Delivery</h5>
-          <h3>Sony World UAE</h3>
-          <p>
-            Led the website delivery from system design through implementation, shaping the architecture,
-            backend setup, and overall platform execution.
-          </p>
-          <div class="mini-links">
-            <a href="https://sonyworld.ae/" target="_blank" rel="noreferrer">Visit project</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <h5>Enterprise Delivery · Multi-Project Experience</h5>
-          <h3>40+ E-commerce Websites</h3>
-          <p>
-            Delivered and maintained more than 40 e-commerce websites across different domains,
-            covering performance, integrations, checkout customization, migrations, and platform support.
-          </p>
-        </article>
-      </section>
-
-      <section id="showcase">
-        <h2>Website Showcase</h2>
-        <p class="section-intro">
-          A small selection of live platforms I have worked on. Each one reflects a different aspect of my backend and Adobe Commerce experience.
-        </p>
-
-        <article class="project">
-          <h3>Selected live work</h3>
-          <ul class="stack-list">
-            <li><a href="http://store.segway.com/" target="_blank" rel="noreferrer">store.segway.com</a> — full Adobe Commerce implementation</li>
-            <li><a href="https://th.hm.com" target="_blank" rel="noreferrer">th.hm.com</a> — high-traffic Adobe Commerce Cloud platform</li>
-            <li><a href="https://id.hm.com" target="_blank" rel="noreferrer">id.hm.com</a> — regional Adobe Commerce Cloud storefront</li>
-            <li><a href="https://smyperformance.com/" target="_blank" rel="noreferrer">smyperformance.com</a> — custom checkout and wholesale logic</li>
-            <li><a href="https://sonyworld.ae/" target="_blank" rel="noreferrer">sonyworld.ae</a> — system design to implementation</li>
-          </ul>
-        </article>
-      </section>
-
-      <section>
-        <h2>Production Problems I Solve</h2>
-        <ul class="problem-list">
-          <li>MySQL memory growth and query bottlenecks under load</li>
-          <li>Cache inconsistencies across Cloudflare, Varnish, and Magento full page cache</li>
-          <li>Slow response times caused by inefficient backend processing</li>
-          <li>Peak traffic risk during Black Friday and other high-demand periods</li>
-          <li>Complex integration flows across ERP, CRM, logistics, and payment systems</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Tech Stack</h2>
-        <p>
-          PHP, Magento 2, Adobe Commerce Cloud, MySQL, Redis, Varnish, AWS, Docker,
-          GraphQL, REST APIs, RabbitMQ, Cloudflare, New Relic, GitHub Actions.
-        </p>
-      </section>
-
-      <section id="career">
-        <h2>Career Changelog</h2>
-        <p class="section-intro">
-          Inspired by changelog-style portfolios, this section summarizes the major changes in my engineering journey.
-        </p>
-
-        <div class="changelog">
-          <div class="version">
-            <h3>3.0.0 — Senior Backend Engineer @ H&amp;M (2025–Present)</h3>
-            <ul class="impact-list">
-              <li>Worked on Adobe Commerce Cloud for H&amp;M Thailand and Indonesia.</li>
-              <li>Resolved critical production issues and improved platform response time by 40%.</li>
-              <li>Implemented peak traffic control strategy using AWS Lambda.</li>
-            </ul>
-          </div>
-
-          <div class="version">
-            <h3>2.0.0 — Lead Software Developer @ Sigma Solve (2023–2025)</h3>
-            <ul class="impact-list">
-              <li>Built and optimized enterprise e-commerce systems.</li>
-              <li>Integrated 100+ APIs and led a team of 8+ developers.</li>
-              <li>Improved deployment workflows and architecture quality.</li>
-            </ul>
-          </div>
-
-          <div class="version">
-            <h3>1.0.0 — Magento Developer to Backend Engineer (2018–2023)</h3>
-            <ul class="impact-list">
-              <li>Delivered migrations, custom modules, checkout customization, and search improvements.</li>
-              <li>Built end-to-end commerce solutions for multiple brands and platforms.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="resume">
-        <h2>Resume</h2>
-        <p>
-          You can view or download my full resume below:
-        </p>
-        <div class="mini-links">
-          <a href="/Balkrishan_Verma_Senior_Backend_Engineer.pdf" target="_blank">View Resume (PDF)</a>
-          <a href="/Balkrishan_Verma_Senior_Backend_Engineer.pdf" download>Download Resume</a>
-          <a href="https://www.linkedin.com/in/balkrishan-verma-ba0261136" target="_blank" rel="noreferrer">LinkedIn</a>
-        </div>
-      </section>
-
-      <p class="footer">Made with GitHub Pages. Designed in a minimal content-first style inspired by clean engineering portfolios.</p>
-    </main>
   </div>
 </body>
 </html>
