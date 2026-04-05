@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Balkrishan Verma | Backend Engineer</title>
+<title>Balkrishan Verma</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -11,70 +11,77 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: #0b0f19;
+    background: #050816;
     color: #e5e7eb;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 40px 20px;
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
+h1 { font-size: 48px; }
+h2 { color: #38bdf8; margin-top: 80px; }
 
-h2 {
-    color: #38bdf8;
-    margin-bottom: 15px;
-}
-
-.section {
-    margin-top: 60px;
-}
-
-.hero p {
+p {
     color: #9ca3af;
+    line-height: 1.7;
+}
+
+.hero {
+    margin-top: 80px;
 }
 
 .highlight {
     color: #38bdf8;
+    font-weight: 600;
 }
 
 .card {
-    background: #111827;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: 0.3s;
-    border: 1px solid #1f2937;
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 14px;
+    margin-top: 25px;
+    border: 1px solid #1e293b;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
     border-color: #38bdf8;
 }
 
-.card h3 {
-    margin-top: 0;
+.tag {
+    display: inline-block;
+    background: #1e293b;
+    padding: 6px 10px;
+    margin: 6px 6px 0 0;
+    border-radius: 6px;
+    font-size: 12px;
 }
 
-.label {
-    font-weight: 600;
-    color: #9ca3af;
+.link {
+    color: #38bdf8;
+    text-decoration: none;
 }
 
-.tech {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #9ca3af;
+.link:hover {
+    text-decoration: underline;
+}
+
+.section {
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .footer {
+    margin-top: 100px;
     text-align: center;
-    margin-top: 60px;
     color: #6b7280;
 }
 </style>
@@ -84,73 +91,155 @@ h2 {
 
 <div class="container">
 
-    <!-- HERO -->
-    <div class="hero">
-        <h1>Balkrishan Verma</h1>
-        <p><strong>Senior Backend Engineer | Adobe Commerce | High-Scale Systems</strong></p>
+<!-- HERO -->
+<div class="hero section">
+    <h1>Balkrishan Verma</h1>
+    <p><strong>Senior Backend Engineer | Adobe Commerce | High-Scale Systems</strong></p>
+
+    <p>
+        I design and scale backend systems that handle 
+        <span class="highlight">high traffic, complex integrations, and production-critical workloads.</span>
+    </p>
+
+    <p>
+        Improved performance by <span class="highlight">40%</span> · 
+        Solved critical production issues · 
+        Built scalable systems for peak events like Black Friday
+    </p>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+    <h2>About</h2>
+    <p>
+        Backend Engineer with 8+ years of experience in Adobe Commerce and Magento.
+        I focus on performance optimization, distributed systems, and solving real production problems at scale.
+    </p>
+</div>
+
+<!-- CASE STUDIES -->
+<div class="section">
+    <h2>Case Studies</h2>
+
+    <div class="card">
+        <h3>Scaling Adobe Commerce (H&M)</h3>
+        <p><strong>Problem:</strong> MySQL memory spike (21% → 86%)</p>
+        <p><strong>Solution:</strong> Query optimization, indexing, Redis + Varnish tuning</p>
+        <p><strong>Impact:</strong> Prevented downtime + improved response time by 40%</p>
+    </div>
+
+    <div class="card">
+        <h3>Black Friday Traffic Control</h3>
+        <p><strong>Problem:</strong> High traffic causing instability</p>
+        <p><strong>Solution:</strong> AWS Lambda-based waiting room</p>
+        <p><strong>Impact:</strong> Stable system during peak load</p>
+    </div>
+
+</div>
+
+<!-- PROBLEMS -->
+<div class="section">
+    <h2>Production Problems I Solved</h2>
+    <p>
+        • MySQL memory escalation under load  
+        • CDN caching issues delivering stale assets  
+        • Slow checkout due to DB bottlenecks  
+        • High traffic failures during peak events  
+    </p>
+</div>
+
+<!-- WEBSITE SHOWCASE -->
+<div class="section">
+    <h2>Live Website Showcase</h2>
+
+    <div class="card">
+        <h3>Segway Store</h3>
         <p>
-            Improved performance by <span class="highlight">40%</span> · 
-            Solved critical production issues · 
-            Built scalable systems for high-traffic platforms
+            Built a complete Adobe Commerce solution from scratch including custom theme,
+            backend architecture, and performance optimization.
         </p>
+        <p><strong>Impact:</strong> Delivered scalable storefront with optimized performance and UX.</p>
+        <a class="link" href="http://store.segway.com/" target="_blank">View Website →</a>
+
+        <div class="tag">Adobe Commerce</div>
+        <div class="tag">Custom Theme</div>
+        <div class="tag">Performance</div>
     </div>
 
-    <!-- ABOUT -->
-    <div class="section">
-        <h2>About</h2>
+    <div class="card">
+        <h3>H&M Thailand & Indonesia</h3>
         <p>
-            Backend Engineer with 8+ years of experience designing scalable e-commerce systems.
-            Specialized in performance optimization, distributed systems, and production reliability.
+            Worked on high-traffic Adobe Commerce Cloud platform handling enterprise-level scale.
         </p>
-    </div>
-
-    <!-- PROJECTS -->
-    <div class="section">
-        <h2>Case Studies</h2>
-
-        <div class="card">
-            <h3>Scaling Adobe Commerce (H&M)</h3>
-            <p><span class="label">Problem:</span> MySQL memory spike (21% → 86%)</p>
-            <p><span class="label">Solution:</span> Query optimization, indexing, Redis + Varnish tuning</p>
-            <p><span class="label">Impact:</span> Prevented downtime + improved response time by 40%</p>
-            <div class="tech">Tech: Magento, MySQL, Redis, Varnish, AWS</div>
-        </div>
-
-        <div class="card">
-            <h3>Black Friday Traffic Control System</h3>
-            <p><span class="label">Problem:</span> High traffic causing system instability</p>
-            <p><span class="label">Solution:</span> AWS Lambda-based waiting room</p>
-            <p><span class="label">Impact:</span> Stable platform during peak load</p>
-            <div class="tech">Tech: AWS Lambda, CDN, Load Management</div>
-        </div>
-
-        <div class="card">
-            <h3>Enterprise API Integration</h3>
-            <p><span class="label">Scope:</span> 100+ APIs across ERP, CRM, Payments</p>
-            <p><span class="label">Impact:</span> Reduced manual work by 30%</p>
-            <div class="tech">Tech: REST, GraphQL, Magento</div>
-        </div>
-
-    </div>
-
-    <!-- SKILLS -->
-    <div class="section">
-        <h2>Tech Stack</h2>
+        <p><strong>Traffic:</strong> High-scale production environment (Black Friday load)</p>
         <p>
-            PHP · Magento · AWS · Redis · Varnish · MySQL · GraphQL · Docker
+            <strong>Key Work:</strong> Performance optimization, MySQL issue resolution, caching fixes,
+            Black Friday traffic control system.
         </p>
+        <a class="link" href="https://th.hm.com" target="_blank">Thailand →</a> |
+        <a class="link" href="https://id.hm.com" target="_blank">Indonesia →</a>
+
+        <div class="tag">High Traffic</div>
+        <div class="tag">AWS</div>
+        <div class="tag">Scaling</div>
     </div>
 
-    <!-- CONTACT -->
-    <div class="section">
-        <h2>Contact</h2>
-        <p>Email: balkrishanverma6196@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/balkrishan-verma-ba0261136</p>
+    <div class="card">
+        <h3>SMY Performance</h3>
+        <p>
+            Built advanced checkout and shipping logic including custom rules for wholesale customers.
+        </p>
+        <p><strong>Impact:</strong> Improved checkout flexibility and enabled B2B workflows.</p>
+        <a class="link" href="https://smyperformance.com/" target="_blank">View Website →</a>
+
+        <div class="tag">Custom Checkout</div>
+        <div class="tag">Shipping Logic</div>
+        <div class="tag">B2B</div>
     </div>
 
-    <div class="footer">
-        <p>© Balkrishan Verma</p>
+    <div class="card">
+        <h3>Sony World UAE</h3>
+        <p>
+            Delivered full platform from system design to implementation, including architecture planning,
+            backend development, and integrations.
+        </p>
+        <p><strong>Impact:</strong> End-to-end enterprise e-commerce delivery.</p>
+        <a class="link" href="https://sonyworld.ae/" target="_blank">View Website →</a>
+
+        <div class="tag">System Design</div>
+        <div class="tag">End-to-End</div>
+        <div class="tag">Magento</div>
     </div>
+
+    <div class="card">
+        <h3>Multiple E-commerce Platforms</h3>
+        <p>
+            Delivered and maintained 40+ e-commerce websites across multiple industries,
+            focusing on scalability, integrations, and performance optimization.
+        </p>
+        <p><strong>Impact:</strong> Improved platform stability and reduced operational issues across projects.</p>
+
+        <div class="tag">40+ Projects</div>
+        <div class="tag">Scaling</div>
+        <div class="tag">Optimization</div>
+    </div>
+
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+    <h2>Contact</h2>
+    <p>Email: balkrishanverma6196@gmail.com</p>
+    <p>
+        <a class="link" href="https://linkedin.com/in/balkrishan-verma-ba0261136" target="_blank">
+            LinkedIn Profile →
+        </a>
+    </p>
+</div>
+
+<div class="footer">
+    <p>© Balkrishan Verma</p>
+</div>
 
 </div>
 
