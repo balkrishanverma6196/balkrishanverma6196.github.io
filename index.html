@@ -8,6 +8,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -15,34 +19,81 @@ body {
     color: #e5e7eb;
 }
 
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(5, 8, 22, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #9ca3af;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+/* CONTAINER */
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 40px 20px;
 }
 
-h1 { font-size: 48px; }
-h2 { color: #38bdf8; margin-top: 80px; }
+/* HERO */
+.hero {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 52px;
+    background: linear-gradient(90deg, #38bdf8, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-top: 80px;
+}
 
 p {
     color: #9ca3af;
     line-height: 1.7;
 }
 
-.hero {
-    margin-top: 80px;
-}
-
-.highlight {
-    color: #38bdf8;
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
     font-weight: 600;
 }
 
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* CARD */
 .card {
     background: #0f172a;
     padding: 25px;
     border-radius: 14px;
-    margin-top: 25px;
     border: 1px solid #1e293b;
     transition: all 0.3s ease;
 }
@@ -52,6 +103,7 @@ p {
     border-color: #38bdf8;
 }
 
+/* TAG */
 .tag {
     display: inline-block;
     background: #1e293b;
@@ -61,24 +113,19 @@ p {
     font-size: 12px;
 }
 
-.link {
-    color: #38bdf8;
-    text-decoration: none;
-}
-
-.link:hover {
-    text-decoration: underline;
-}
-
+/* SCROLL ANIMATION */
 .section {
-    animation: fadeUp 1s ease;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
 }
 
-@keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
+/* FOOTER */
 .footer {
     margin-top: 100px;
     text-align: center;
@@ -89,152 +136,76 @@ p {
 
 <body>
 
+<!-- NAVBAR -->
+<div class="navbar">
+    <div><strong>Balkrishan</strong></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
 <div class="container">
 
 <!-- HERO -->
 <div class="hero section">
-    <h1>Balkrishan Verma</h1>
-    <p><strong>Senior Backend Engineer | Adobe Commerce | High-Scale Systems</strong></p>
+    <h1>Senior Backend Engineer</h1>
+    <p>Adobe Commerce · Distributed Systems · High Scale</p>
 
     <p>
-        I design and scale backend systems that handle 
-        <span class="highlight">high traffic, complex integrations, and production-critical workloads.</span>
+        I build scalable backend systems that handle high traffic, 
+        optimize performance, and solve production-critical problems.
     </p>
 
-    <p>
-        Improved performance by <span class="highlight">40%</span> · 
-        Solved critical production issues · 
-        Built scalable systems for peak events like Black Friday
-    </p>
+    <a class="btn" href="#projects">View Work</a>
 </div>
 
 <!-- ABOUT -->
-<div class="section">
+<div id="about" class="section">
     <h2>About</h2>
     <p>
-        Backend Engineer with 8+ years of experience in Adobe Commerce and Magento.
-        I focus on performance optimization, distributed systems, and solving real production problems at scale.
+        8+ years of experience building high-performance e-commerce systems.
+        Focused on scalability, backend architecture, and solving real production challenges.
     </p>
 </div>
 
-<!-- CASE STUDIES -->
-<div class="section">
-    <h2>Case Studies</h2>
+<!-- PROJECTS -->
+<div id="projects" class="section">
+    <h2>Selected Work</h2>
 
-    <div class="card">
-        <h3>Scaling Adobe Commerce (H&M)</h3>
-        <p><strong>Problem:</strong> MySQL memory spike (21% → 86%)</p>
-        <p><strong>Solution:</strong> Query optimization, indexing, Redis + Varnish tuning</p>
-        <p><strong>Impact:</strong> Prevented downtime + improved response time by 40%</p>
+    <div class="grid">
+
+        <div class="card">
+            <h3>H&M Platform Scaling</h3>
+            <p>Resolved MySQL memory issue (21% → 86%) and improved performance by 40%.</p>
+        </div>
+
+        <div class="card">
+            <h3>Black Friday Traffic System</h3>
+            <p>Built AWS Lambda waiting room to handle peak load traffic.</p>
+        </div>
+
+        <div class="card">
+            <h3>Segway Store</h3>
+            <p>Full Adobe Commerce implementation with custom theme and backend architecture.</p>
+        </div>
+
+        <div class="card">
+            <h3>Sony UAE</h3>
+            <p>End-to-end e-commerce platform from system design to deployment.</p>
+        </div>
+
     </div>
-
-    <div class="card">
-        <h3>Black Friday Traffic Control</h3>
-        <p><strong>Problem:</strong> High traffic causing instability</p>
-        <p><strong>Solution:</strong> AWS Lambda-based waiting room</p>
-        <p><strong>Impact:</strong> Stable system during peak load</p>
-    </div>
-
-</div>
-
-<!-- PROBLEMS -->
-<div class="section">
-    <h2>Production Problems I Solved</h2>
-    <p>
-        • MySQL memory escalation under load  
-        • CDN caching issues delivering stale assets  
-        • Slow checkout due to DB bottlenecks  
-        • High traffic failures during peak events  
-    </p>
-</div>
-
-<!-- WEBSITE SHOWCASE -->
-<div class="section">
-    <h2>Live Website Showcase</h2>
-
-    <div class="card">
-        <h3>Segway Store</h3>
-        <p>
-            Built a complete Adobe Commerce solution from scratch including custom theme,
-            backend architecture, and performance optimization.
-        </p>
-        <p><strong>Impact:</strong> Delivered scalable storefront with optimized performance and UX.</p>
-        <a class="link" href="http://store.segway.com/" target="_blank">View Website →</a>
-
-        <div class="tag">Adobe Commerce</div>
-        <div class="tag">Custom Theme</div>
-        <div class="tag">Performance</div>
-    </div>
-
-    <div class="card">
-        <h3>H&M Thailand & Indonesia</h3>
-        <p>
-            Worked on high-traffic Adobe Commerce Cloud platform handling enterprise-level scale.
-        </p>
-        <p><strong>Traffic:</strong> High-scale production environment (Black Friday load)</p>
-        <p>
-            <strong>Key Work:</strong> Performance optimization, MySQL issue resolution, caching fixes,
-            Black Friday traffic control system.
-        </p>
-        <a class="link" href="https://th.hm.com" target="_blank">Thailand →</a> |
-        <a class="link" href="https://id.hm.com" target="_blank">Indonesia →</a>
-
-        <div class="tag">High Traffic</div>
-        <div class="tag">AWS</div>
-        <div class="tag">Scaling</div>
-    </div>
-
-    <div class="card">
-        <h3>SMY Performance</h3>
-        <p>
-            Built advanced checkout and shipping logic including custom rules for wholesale customers.
-        </p>
-        <p><strong>Impact:</strong> Improved checkout flexibility and enabled B2B workflows.</p>
-        <a class="link" href="https://smyperformance.com/" target="_blank">View Website →</a>
-
-        <div class="tag">Custom Checkout</div>
-        <div class="tag">Shipping Logic</div>
-        <div class="tag">B2B</div>
-    </div>
-
-    <div class="card">
-        <h3>Sony World UAE</h3>
-        <p>
-            Delivered full platform from system design to implementation, including architecture planning,
-            backend development, and integrations.
-        </p>
-        <p><strong>Impact:</strong> End-to-end enterprise e-commerce delivery.</p>
-        <a class="link" href="https://sonyworld.ae/" target="_blank">View Website →</a>
-
-        <div class="tag">System Design</div>
-        <div class="tag">End-to-End</div>
-        <div class="tag">Magento</div>
-    </div>
-
-    <div class="card">
-        <h3>Multiple E-commerce Platforms</h3>
-        <p>
-            Delivered and maintained 40+ e-commerce websites across multiple industries,
-            focusing on scalability, integrations, and performance optimization.
-        </p>
-        <p><strong>Impact:</strong> Improved platform stability and reduced operational issues across projects.</p>
-
-        <div class="tag">40+ Projects</div>
-        <div class="tag">Scaling</div>
-        <div class="tag">Optimization</div>
-    </div>
-
 </div>
 
 <!-- CONTACT -->
-<div class="section">
+<div id="contact" class="section">
     <h2>Contact</h2>
     <p>Email: balkrishanverma6196@gmail.com</p>
-    <p>
-        <a class="link" href="https://linkedin.com/in/balkrishan-verma-ba0261136" target="_blank">
-            LinkedIn Profile →
-        </a>
-    </p>
+    <a class="btn" href="https://linkedin.com/in/balkrishan-verma-ba0261136" target="_blank">
+        LinkedIn
+    </a>
 </div>
 
 <div class="footer">
@@ -242,6 +213,20 @@ p {
 </div>
 
 </div>
+
+<script>
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.1 });
+
+sections.forEach(section => observer.observe(section));
+</script>
 
 </body>
 </html>
